@@ -13,7 +13,8 @@ docker rmi nomeDaImagem
 docker run -it nomeDaImagem
 
 * para usar um container que você  criou antes
-docker container start -i idDoContainer
+docker container start idDoContainer #deixa rodando e cai fora
+docker container start -i idDoContainer #deixa rodando interativo
 
 * para ver os container
 docker ps -a
@@ -24,4 +25,11 @@ docker rm idDoContainer
 * para rodar um comando em container
 docker exec idCoContainer comando
 exemplo *docker exec 9a7dc7a5897f /myseq.sh 12*
+myseq.sh
+	#!/bin/sh    
+	myseq()      
+	{            
+	 seq $1 -2 1 
+	}            
+	myseq $@     
 

@@ -1,0 +1,5 @@
+FROM centos:6
+RUN yum install -y httpd
+MAINTAINER sgiraldo@uolinc.com
+CMD httpd
+EXPOSE 80
