@@ -4,12 +4,12 @@
 docker images
 
 * para pegar uma imagem (o docker hub em várias)
-docker pull nomeDaImagem
+`docker pull nomeDaImagem`
 
 * para apagar uma imagem
 docker rmi nomeDaImagem
 
-* para criar um container a partir de uma imagem. cada vezz que você  roda este comando será criado um container
+* para criar um container a partir de uma imagem. cada vez que você  roda este comando será criado um container
 docker run -it nomeDaImagem
 
 * para usar um container que você  criou antes
